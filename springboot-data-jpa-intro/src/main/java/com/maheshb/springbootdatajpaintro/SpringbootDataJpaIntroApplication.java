@@ -48,8 +48,8 @@ public class SpringbootDataJpaIntroApplication {
 			// fetch Books by author name
 			log.info("Book found with findByAuthor('John Carnell'):");
 			log.info("--------------------------------------------");
-			bookRepository.findByAuthor("John Carnell").forEach(bauer -> {
-				log.info(bauer.toString());
+			bookRepository.findByAuthor("John Carnell").forEach(john -> {
+				log.info(john.toString());
 			});
 			log.info("");
 
