@@ -36,7 +36,7 @@ public class SpringbootDataJpaIntroApplication {
 			bookRepository.findAll().forEach(bookEntity -> log.info(bookEntity.toString()));
 			log.info("");
 
-			// fetch an individual customer by ID
+			// fetch an individual book by ID
 			Optional<BookEntity> bookEntity = bookRepository.findById(1L);
 			if (bookEntity.isPresent()) {
 				log.info("Book found with findById(1L):");
